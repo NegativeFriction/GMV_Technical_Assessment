@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="506px" height="110px" viewBox="0 0 506 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rapid Logo</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#00EA7C" offset="0%"></stop>
+            <stop stop-color="#1877A3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Rapid-Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Rectangle" fill="url(#linearGradient-1)" points="38.9230769 -1.90819582e-15 506 0 468.026266 110 0 110"></polygon>
+        <text id="Rapid" font-family="NCAAIllinoisFightingIllini, NCAA Illinois Fighting Illini" font-size="82" font-weight="normal" fill="#FFFFFF">
+            <tspan x="41" y="81">Rapid</tspan>
+        </text>
+        <text id="BUS-and-TRAIN" font-family="NCAAIllinoisFightingIllini, NCAA Illinois Fighting Illini" font-size="10" font-weight="normal" fill="#FFFFFF">
+            <tspan x="312" y="28">     </tspan>
+            <tspan x="324.402344" y="28" font-size="32">BUS and</tspan>
+            <tspan x="312" y="62" font-size="32">TRAIN</tspan>
+        </text>
+    </g>
+</svg>
