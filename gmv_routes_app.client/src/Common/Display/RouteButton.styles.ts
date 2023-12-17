@@ -18,7 +18,7 @@ export const RouteButtonContainer = styled.span<RouteButtonContainerProps>`
   margin-left: 19.68px;
   border-radius: 32px;
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
 `;
 
