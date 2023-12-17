@@ -19,6 +19,7 @@ export const RouteButtonContainer = styled.span<RouteButtonContainerProps>`
   border-radius: 32px;
   font-size: 72px;
   font-weight: bold;
+  cursor: pointer;
 `;
 
 export const RouteTextContainer = styled.div`

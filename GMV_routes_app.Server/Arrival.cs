@@ -7,9 +7,8 @@
     public required int[] minutesToArrival { get; set;}
 }
 
-    public class Arrival
+    public class Arrival: Route
     {
-        public required string routeName { get; set; }
         
         public required Destination[] destinationsData { get; set; }
 

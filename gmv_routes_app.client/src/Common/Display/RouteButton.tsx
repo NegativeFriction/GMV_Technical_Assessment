@@ -8,6 +8,7 @@ interface propsType {
   routeName: string;
   textColor: string;
   routeColor: string;
+  handleClick?: () => void;
 }
 
 const RouteButton: React.FC<propsType> = ({
@@ -15,6 +16,7 @@ const RouteButton: React.FC<propsType> = ({
   routeName,
   textColor,
   routeColor,
+  handleClick,
 }) => {
   const iconStyles = {
     margin: "12px 16.8px 14.4px 16.8px",
@@ -36,7 +38,11 @@ const RouteButton: React.FC<propsType> = ({
   }
 
   return (
-    <RouteButtonContainer routeColor={routeColor} textColor={textColor}>
+    <RouteButtonContainer
+      routeColor={routeColor}
+      textColor={textColor}
+      onClick={handleClick}
+    >
       <div style={iconStyles}>{IconSource}</div>
       <RouteTextContainer>{routeName}</RouteTextContainer>
     </RouteButtonContainer>

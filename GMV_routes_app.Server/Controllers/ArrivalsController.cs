@@ -23,6 +23,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
         {
             routeName="Local 1",
+            routeType=Arrival.RouteType.Bus,
+            routeColor="#E33427",
+            textColor="#FFFFFF",
             destinationsData = new Destination[]
             {
                 new Destination
@@ -47,6 +50,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "Local 2",
+                   routeType=Arrival.RouteType.Bus,
+            routeColor="#7E350E",
+            textColor="#FFFFFF",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -63,6 +69,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "Local 3",
+                   routeType=Arrival.RouteType.Bus,
+            routeColor="#94DCF8",
+            textColor="#2C3242",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -87,6 +96,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "Local 4",
+                routeType=Arrival.RouteType.Bus,
+            routeColor="#FFC000",
+            textColor="#2C3242",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -103,6 +115,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "Local 5",
+                routeType=Arrival.RouteType.Bus,
+            routeColor="#A02B93",
+            textColor="#FFFFFF",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -119,6 +134,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "100 - Southtown Express Rapid Bus Route",
+                routeType=Arrival.RouteType.Bus,
+            routeColor="#8ED973",
+            textColor="#2C3242",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -135,6 +153,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "200 - Southtown Express Rapid Bus Route",
+                routeType=Arrival.RouteType.Bus,
+            routeColor="#00B050",
+            textColor="#FFFFFF",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -151,6 +172,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "300 - Southtown Express Rapid Bus Route",
+                routeType=Arrival.RouteType.Bus,
+            routeColor="#3C7D22",
+            textColor="#FFFFFF",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -167,6 +191,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "Blue Line Streetcar",
+                routeType=Arrival.RouteType.Bus,
+            routeColor="#1B51EE",
+            textColor="#FFFFFF",
                 destinationsData = new Destination[]
             {
                 new Destination
@@ -191,6 +218,9 @@ namespace GMV_routes_app.Server.Controllers
             new Arrival
             {
                 routeName = "Red Line Streetcar",
+                routeType=Arrival.RouteType.Bus,
+            routeColor="#FF0000",
+            textColor="#FFFFFF",
                 destinationsData = new Destination[]
             {
                 new Destination
