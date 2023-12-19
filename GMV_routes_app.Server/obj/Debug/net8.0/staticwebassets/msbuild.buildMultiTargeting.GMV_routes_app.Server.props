@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GMV_routes_app.Server.props" />
+</Project>

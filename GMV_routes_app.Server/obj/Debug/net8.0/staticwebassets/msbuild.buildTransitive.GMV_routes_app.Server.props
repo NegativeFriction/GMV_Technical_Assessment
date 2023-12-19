@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GMV_routes_app.Server.props" />
+</Project>
