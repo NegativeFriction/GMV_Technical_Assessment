@@ -18,10 +18,7 @@ function App() {
         <HomePage setSelectedRouteContextValue={setSelectedRouteContextValue} />
       )}
       {selectedRouteContextValue && (
-        <ArrivalsPage
-          {...selectedRouteContextValue}
-          setSelectedRouteContextValue={setSelectedRouteContextValue}
-        />
+        <ArrivalsPage {...selectedRouteContextValue} />
       )}
     </SelectedRouteContext.Provider>
   );
