@@ -1,6 +1,6 @@
 import { fileURLToPath, URL } from "node:url";
 
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import plugin from "@vitejs/plugin-react";
 import fs from "fs";
 import path from "path";
@@ -52,6 +52,11 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [plugin()],
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./setupTests.ts",
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
