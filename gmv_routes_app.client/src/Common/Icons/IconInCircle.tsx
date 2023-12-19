@@ -1,13 +1,14 @@
 import React from "react";
 import TrainComponent from "../../assets/TrainComponent";
 import BusComponent from "../../assets/BusComponent";
+import { IconWrapper } from "./IconInCircle.style";
 
-interface propsType {
+export type propsType = {
   iconName: string;
   size?: number;
   backgroundColor: string;
   fillColor: string;
-}
+};
 
 const IconInCircle: React.FC<propsType> = ({
   iconName,
@@ -31,19 +32,9 @@ const IconInCircle: React.FC<propsType> = ({
   }
 
   return (
-    <div
-      style={{
-        backgroundColor,
-        width: size,
-        height: size,
-        borderRadius: "50%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <IconWrapper backgroundColor={backgroundColor} size={size}>
       {iconSource}
-    </div>
+    </IconWrapper>
   );
 };
 
