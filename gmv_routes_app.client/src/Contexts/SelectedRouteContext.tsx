@@ -2,14 +2,16 @@ import React, { createContext, useContext, useState } from "react";
 
 export type SelectedRouteContextType = {
   selectedRoute?: string;
-  setSelectedRoute?: (arg?: string) => void;
+  setSelectedRoute: (arg?: string) => void;
 };
 
 export type propsType = {
   children: React.ReactNode;
 };
 
-export const SelectedRouteContext = createContext<SelectedRouteContextType>({});
+export const SelectedRouteContext = createContext<SelectedRouteContextType>({
+  setSelectedRoute: () => {},
+});
 
 export const useSelectedRouteContext = () => useContext(SelectedRouteContext);
 

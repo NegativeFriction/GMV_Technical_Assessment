@@ -1,10 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { act, render, screen, waitFor } from "@testing-library/react";
 
-import ClockComponent, {
-  clockComponentTestId,
-  supportedTimeZones,
-} from "./ClockComponent";
+import ClockComponent, { supportedTimeZones } from "./ClockComponent";
 
 describe("<ClockComponent />", () => {
   const mockDate = new Date(1969, 7, 16, 5, 0, 0);
