@@ -3,7 +3,7 @@ import { useSelectedRouteContext } from "../../Contexts/SelectedRouteContext";
 import { RoutesContainer } from "./HomePage.styles";
 import DisplayTile from "../../Common/Display/DisplayTile/DisplayTile";
 
-interface Route {
+export interface Route {
   routeName: string;
   routeColor: string;
   textColor: string;

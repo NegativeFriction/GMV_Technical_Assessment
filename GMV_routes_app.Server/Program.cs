@@ -1,9 +1,15 @@
+using GMV_routes_app.Server.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApiDocument();
+
+builder.Services.AddTransient<IArrivalService, ArrivalService>();
+builder.Services.AddTransient<ITransitRouteService, TransitRoutesService>();
+
 
 var app = builder.Build();
 

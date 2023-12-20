@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GMV_routes_app.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9bf7d737c7f61c31601dfc720b4da6be146610b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae04edd5c4a92ab32974f1a9ea25fa950aba7fea")]
 [assembly: System.Reflection.AssemblyProductAttribute("GMV_routes_app.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GMV_routes_app.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
