@@ -3,6 +3,8 @@ import TrainComponent from "../../assets/TrainComponent";
 import BusComponent from "../../assets/BusComponent";
 import { IconWrapper } from "./IconInCircle.style";
 
+export const IconInCircleTestId = "icon-in-circle-test-id";
+
 export type propsType = {
   iconName: string;
   size?: number;
@@ -32,7 +34,11 @@ const IconInCircle: React.FC<propsType> = ({
   }
 
   return (
-    <IconWrapper backgroundColor={backgroundColor} size={size}>
+    <IconWrapper
+      backgroundColor={backgroundColor}
+      size={size}
+      data-testid={IconInCircleTestId}
+    >
       {iconSource}
     </IconWrapper>
   );

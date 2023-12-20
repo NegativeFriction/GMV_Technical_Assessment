@@ -9,7 +9,9 @@ import {
   DisplayTileTimeWrapper,
 } from "./DisplayTile.styles";
 
-interface propsType {
+export const displayTileTestId = "display-tile-test-id";
+
+export interface propsType {
   destinationText?: string;
   minutesToArrival?: number;
   handleClick?: (args: any) => void;
@@ -34,6 +36,7 @@ const DisplayTile: React.FC<propsType> = ({
     <DisplayTileContainer
       onClick={handleClick}
       triggerMediaQuery={triggerMediaQuery}
+      data-testid={displayTileTestId}
     >
       <DisplayTileContentWrapper>
         <DisplayTileTitleWrapper>

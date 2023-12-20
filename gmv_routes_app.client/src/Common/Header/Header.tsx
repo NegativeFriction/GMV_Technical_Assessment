@@ -1,7 +1,9 @@
 import React from "react";
 import { useSelectedRouteContext } from "../../Contexts/SelectedRouteContext";
 import RapidLogoComponent from "./../../assets/RapidLogoComponent";
-import GenericButton, { buttonSVGValues } from "../Buttons/GenericButton";
+import GenericButton, {
+  buttonSVGValues,
+} from "../Buttons/Generic_Button/GenericButton";
 import ClockComponent, {
   supportedTimeZones,
 } from "../Display/ClockComponent/ClockComponent";

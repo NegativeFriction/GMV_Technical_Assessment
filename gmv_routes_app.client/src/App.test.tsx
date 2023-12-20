@@ -28,8 +28,8 @@ describe("<App />", () => {
       </SelectedRouteContext.Provider>
     );
 
-    expect(screen.getByTestId(mockedHomePageTestId)).toBeTruthy();
-    expect(screen.queryByTestId(mockedArrivalsPageTestId)).toBeFalsy();
+    expect(screen.getByTestId(mockedHomePageTestId)).toBeDefined();
+    expect(screen.queryByTestId(mockedArrivalsPageTestId)).toBeNull();
   });
 
   it("Should navigate to the arrivals page when the user has selected a route", async () => {
@@ -42,15 +42,15 @@ describe("<App />", () => {
     );
 
     await waitFor(() =>
-      expect(screen.getByTestId(mockedArrivalsPageTestId)).toBeTruthy()
+      expect(screen.getByTestId(mockedArrivalsPageTestId)).toBeDefined()
     );
     await waitFor(() =>
-      expect(screen.queryByTestId(mockedHomePageTestId)).toBeFalsy()
+      expect(screen.queryByTestId(mockedHomePageTestId)).toBeNull()
     );
   });
 
   it("Should render the Header component", () => {
     render(<App />);
-    expect(screen.getByTestId(headerTestId)).toBeTruthy();
+    expect(screen.getByTestId(headerTestId)).toBeDefined();
   });
 });
