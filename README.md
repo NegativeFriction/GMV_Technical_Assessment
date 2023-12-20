@@ -10,7 +10,7 @@ In Visual Studio, open the sln file (GMV_routes_app.sln)
 
 Select https from the start options and click start. The project will need a few minutes to update local npm packages and build.
 
-It should automatically open the server at https://localhost:7139 (domains 7139/routes and 7139/arrivals/[arrivalNameWithoutAnySpaces])
+It should automatically open the server at https://localhost:7139 (domains 7139/routes and 7139/arrivals/[arrivalNameWithNoSpaces])
 
 The front end is hosted at https://localhost:5173
 
