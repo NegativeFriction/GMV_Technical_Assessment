@@ -2,14 +2,20 @@ import styled, { css } from "styled-components";
 
 type DisplayTileWrapperProps = {
   triggerMediaQuery?: boolean;
+  backgroundAsRouteColor?: boolean;
+  routeColor: string;
 };
 
 export const DisplayTileContainer = styled.div<DisplayTileWrapperProps>`
   --trigger-media-query: ${(props) => (props.triggerMediaQuery ? "1" : "0")};
-  background-color: #e5e5e5;
+  --background-color-as-route-color: ${(props) =>
+    props.backgroundAsRouteColor ? "1" : "0"};
+  background-color: ${(props) =>
+    props.backgroundAsRouteColor ? props.routeColor : "#e5e5e5"};
   margin-bottom: 32px;
   border-radius: 32px;
   width: 100%;
+
   ${({ triggerMediaQuery }) =>
     triggerMediaQuery &&
     css`
@@ -27,13 +33,24 @@ export const DisplayTileTitleWrapper = styled.span`
   display: flex;
 `;
 
-export const DisplayTileRouteNameWrapper = styled.div`
+type DisplayTileRouteNameWrapper = {
+  routeNameAsTextColor?: boolean;
+  textColor: string;
+};
+export const DisplayTileRouteNameWrapper = styled.div<DisplayTileRouteNameWrapper>`
+--route-name-as-text-color: ${(props) =>
+  props.routeNameAsTextColor ? "1" : "0"}
   font-weight: 700;
   font-size: 64px;
   margin-left: 16px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  ${({ routeNameAsTextColor, textColor }) =>
+    routeNameAsTextColor &&
+    css`
+      color: ${textColor};
+    `}
 `;
 
 export const DisplayTileRouteTextWrapper = styled.div`

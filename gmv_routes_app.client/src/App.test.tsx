@@ -1,9 +1,9 @@
 import { describe, expect, it, vi } from "vitest";
+import { render, screen, waitFor } from "@testing-library/react";
 
 import App from "./App";
 import { headerTestId } from "./Common/Header/Header";
 
-import { render, screen, waitFor } from "@testing-library/react";
 import { SelectedRouteContext } from "./Contexts/SelectedRouteContext";
 
 const mockedHomePageTestId = "home-page";

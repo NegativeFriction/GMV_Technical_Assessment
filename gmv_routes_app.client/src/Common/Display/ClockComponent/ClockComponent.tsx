@@ -25,7 +25,8 @@ const ClockComponent: React.FC<PropsType> = ({ timeZone }) => {
       setLocalTime(currentTime);
     };
     getTime();
-    const interval = setInterval(getTime, 60000);
+    const interval = setInterval(getTime, 5000);
+    // Set the interval to 5 seconds so that the displayed time is never more than 5 seconds off from the true time
 
     return () => clearInterval(interval);
   }, []);

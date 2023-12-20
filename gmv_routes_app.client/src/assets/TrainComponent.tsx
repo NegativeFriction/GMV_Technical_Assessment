@@ -1,4 +1,7 @@
 import SVGComponentPropsType from "./SVGComponentProps";
+import { pathTestId } from "./testIds";
+
+export const trainComponentTestId = "train-component-test-id";
 
 export default ({ fill, size = "120px" }: SVGComponentPropsType) => (
   <svg
@@ -7,6 +10,7 @@ export default ({ fill, size = "120px" }: SVGComponentPropsType) => (
     viewBox="0 0 50 50"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
+    data-testid={trainComponentTestId}
   >
     <title>Icon/Train</title>
     <g
@@ -21,6 +25,7 @@ export default ({ fill, size = "120px" }: SVGComponentPropsType) => (
         id="Train-Shape"
         fill={fill}
         fillRule="nonzero"
+        data-testid={pathTestId}
       ></path>
     </g>
   </svg>

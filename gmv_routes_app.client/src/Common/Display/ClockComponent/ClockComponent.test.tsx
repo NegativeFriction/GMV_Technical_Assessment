@@ -29,7 +29,7 @@ describe("<ClockComponent />", () => {
     await waitFor(() => expect(screen.findByText(expectedTime)).toBeDefined());
   });
 
-  it("Should update the time once a minute", async () => {
+  it("Should update the displayed time after a minute", async () => {
     const mockDateInOneMinute = new Date(1969, 7, 16, 5, 1, 0);
     vi.useFakeTimers({ shouldAdvanceTime: true }).setSystemTime(mockDate);
 

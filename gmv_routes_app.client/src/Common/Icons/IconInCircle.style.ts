@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export type IconWrapperPropsType = {
-  backgroundColor: string;
+  background_color: string;
   size: number;
 };
 export const IconWrapper = styled.div<IconWrapperPropsType>`
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${(props) => props.background_color};
   width: ${(props) => props.size};
   height: ${(props) => props.size};
   border-radius: 50%;

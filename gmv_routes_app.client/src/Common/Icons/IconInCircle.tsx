@@ -35,7 +35,7 @@ const IconInCircle: React.FC<propsType> = ({
 
   return (
     <IconWrapper
-      backgroundColor={backgroundColor}
+      background_color={backgroundColor}
       size={size}
       data-testid={IconInCircleTestId}
     >

@@ -20,6 +20,8 @@ export interface propsType {
   textColor: string;
   routeColor: string;
   triggerMediaQuery?: boolean;
+  routeNameAsTextColor?: boolean;
+  backgroundAsRouteColor?: boolean;
 }
 
 const DisplayTile: React.FC<propsType> = ({
@@ -31,12 +33,16 @@ const DisplayTile: React.FC<propsType> = ({
   textColor,
   routeColor,
   triggerMediaQuery = false,
+  routeNameAsTextColor,
+  backgroundAsRouteColor,
 }) => {
   return (
     <DisplayTileContainer
       onClick={handleClick}
       triggerMediaQuery={triggerMediaQuery}
       data-testid={displayTileTestId}
+      backgroundAsRouteColor={backgroundAsRouteColor}
+      routeColor={routeColor}
     >
       <DisplayTileContentWrapper>
         <DisplayTileTitleWrapper>
@@ -45,7 +51,12 @@ const DisplayTile: React.FC<propsType> = ({
             backgroundColor={routeColor}
             fillColor={textColor}
           />
-          <DisplayTileRouteNameWrapper>{routeName}</DisplayTileRouteNameWrapper>
+          <DisplayTileRouteNameWrapper
+            textColor={textColor}
+            routeNameAsTextColor={routeNameAsTextColor}
+          >
+            {routeName}
+          </DisplayTileRouteNameWrapper>
         </DisplayTileTitleWrapper>
         {destinationText && (
           <DisplayTileRouteTextWrapper>

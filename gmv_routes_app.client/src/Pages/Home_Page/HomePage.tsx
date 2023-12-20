@@ -48,7 +48,14 @@ const HomePage: React.FC = () => {
               setSelectedRoute!(route.routeName);
             },
           };
-          return <DisplayTile {...args} key={route.routeName} />;
+          return (
+            <DisplayTile
+              {...args}
+              key={route.routeName}
+              routeNameAsTextColor={true}
+              backgroundAsRouteColor={true}
+            />
+          );
         })}
     </RoutesContainer>
   );
